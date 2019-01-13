@@ -7,9 +7,19 @@
         android:layout_height="match_parent"
         tools:context=".Main2Activity">
 
+<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+android:orientation="vertical">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="ID : xxx"
+              android:id="@+id/bagId"
+              android:textSize="40dp"
+              tools:layout_editor_absoluteY="180dp" tools:layout_editor_absoluteX="16dp"/>
 
     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-    android:text="WELCOME"
-              android:textSize="40dp"
+    android:textSize="40dp"
+              android:id="@+id/location"
+              android:layout_marginTop="30dp"
+              android:text="Location : xxx"
     />
+</LinearLayout>
 </android.support.constraint.ConstraintLayout>
