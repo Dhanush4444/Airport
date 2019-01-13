@@ -30,6 +30,10 @@ public class MainActivity extends AppCompatActivity {
         login=findViewById(R.id.loginId);
         mUser=mAuth.getCurrentUser();
 
+        if(mUser!=null){
+            startActivity(new Intent(getApplicationContext(),Main2Activity.class));
+        }
+
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
